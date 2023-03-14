@@ -1,38 +1,36 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This is my submission for cmsc447-hw2
 
-## Getting Started
+I made this website through Next.js, which is a full-stack React framework that uses Node.js for the backend.
 
-First, run the development server:
+In order to run this application you will need to have the latest versions of both node and npm installed, instructions for which can be found here: https://docs.npmjs.com/downloading-and-installing-node-js-and-npm
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+Once that is installed you will need to clone the main branch of this repository, open a terminal inside CMSC_447_Homework_2 and run the following commands:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+`npm install`<br/>
+`npm run dev`<br/>
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+The `npm install` command will install all of the node dependencies required for this app to run and the npm run dev will actually deploy the app. Once deployed you should see something like this in the terminal:
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+![Screenshot 2023-03-14 at 6 53 17 PM](https://user-images.githubusercontent.com/48657455/225159766-97e05725-e983-4397-a8a1-c60efd36d349.jpg)
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+It should default to port 3000 however this is not guarenteed. If port 3000 is in use the app will be deployed on the next avaible port and you must take note of where the app is actually deployed in the terminal. Here is an example of when port 3000 is used.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+![image](https://user-images.githubusercontent.com/48657455/225160078-417b2812-5673-4f5a-a2af-4de80809c12f.png)
 
-## Learn More
+Once this app is successfully deployed you can launch it in the broswer at the link given in the terminal.
 
-To learn more about Next.js, take a look at the following resources:
+The database I used for this project is sqlite3 and the database file can be found in CMSC_447_Homework_2/src/database/users.db
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+This database is loaded with the default values given in the document.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+All the backend work I put in to get the apis to work are housed in CMSC_447_Homework_2/src/pages/api/ where each file in this folder is an endpoint that accomplishes a different task.
 
-## Deploy on Vercel
+If you have manipulated the default values in the database, then you can reset them using the following button on the app once deployed and launched in a browser:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+![image](https://user-images.githubusercontent.com/48657455/225160768-31ab685c-50ea-4051-a8f6-71fb7a77f796.png)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+The rest of my website consists of three cards, one for creating users, one for searching for users, and one for deleting users. Please note that per the instructor's this app was not meant to handle more than one user with the exact same name.
+
+Each function has an output box next to it that shows the result of the user's request. Here is a preview of the website:
+
+![image](https://user-images.githubusercontent.com/48657455/225161533-f096a55c-08a4-4e11-a610-a934928ca4ae.png)
