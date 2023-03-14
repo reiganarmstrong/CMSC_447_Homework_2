@@ -6,8 +6,8 @@ In order to run this application you will need to have the latest versions of bo
 
 Once that is installed you will need to clone the main branch of this repository, open a terminal inside CMSC_447_Homework_2 and run the following commands:
 
-`npm install`
-`npm run dev`
+`npm install`<br/>
+`npm run dev`<br/>
 
 The `npm install` command will install all of the node dependencies required for this app to run and the npm run dev will actually deploy the app. Once deployed you should see something like this in the terminal:
 
