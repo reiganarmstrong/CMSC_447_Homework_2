@@ -1,16 +1,4 @@
-import {
-  Card,
-  TextInput,
-  Checkbox,
-  Button,
-  Group,
-  Box,
-  Flex,
-  Text,
-  Stack,
-  Container,
-  NumberInput,
-} from "@mantine/core";
+import { Card, TextInput, Button, Group, Text } from "@mantine/core";
 import ActionWrapper from "./ActionWrapper";
 import { useForm } from "@mantine/form";
 import OutputWrapper from "./OutputWrapper";

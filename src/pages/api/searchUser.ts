@@ -23,7 +23,7 @@ export default async function handler(
     const { name } = query;
     // create a database object
     let db = new sqlite3.Database(
-      "./src/database/data.db",
+      "./src/database/users.db",
       (err: { message: any }) => {
         if (err) {
           console.error(err.message);

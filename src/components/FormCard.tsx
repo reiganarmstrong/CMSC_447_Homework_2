@@ -1,4 +1,3 @@
-import { PropsOf } from "@emotion/react";
 import { Card } from "@mantine/core";
 import { NextPage } from "next";
 import { PropsWithChildren } from "react";

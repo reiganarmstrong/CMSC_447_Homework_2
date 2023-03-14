@@ -1,14 +1,9 @@
 import {
   Card,
   TextInput,
-  Checkbox,
   Button,
   Group,
-  Box,
-  Flex,
   Text,
-  Stack,
-  Container,
   NumberInput,
 } from "@mantine/core";
 import ActionWrapper from "./ActionWrapper";
@@ -18,7 +13,7 @@ import { useState } from "react";
 
 interface values {
   full_name: string;
-  points: number | null;
+  points: number;
 }
 
 export default () => {
@@ -26,14 +21,25 @@ export default () => {
   const form = useForm({
     initialValues: {
       full_name: "",
-      points: null,
+      points: 0,
     },
 
-    validate: (value) => ({
-      full_name:
-        value.full_name.trim().length == 0 ? "Please enter a name" : null,
-      points: value.points == null ? "Please enter a point value" : null,
-    }),
+    validate: {
+      full_name: (value) => {
+        if (value.trim().length == 0) {
+          return "Please enter a name";
+        } else {
+          return null;
+        }
+      },
+      points: (value) => {
+        if (typeof value != "number") {
+          return "Please enter a point value";
+        } else {
+          return null;
+        }
+      },
+    },
   });
 
   const submitHandler = async (values: values) => {
@@ -44,7 +50,6 @@ export default () => {
     const data = await res.json();
 
     changeOutputMessage(data.message);
-    console.log(data);
   };
 
   return (
