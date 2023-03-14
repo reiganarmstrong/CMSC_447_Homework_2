@@ -20,9 +20,11 @@ It should default to port 3000 however this is not guarenteed. If port 3000 is i
 
 Once this app is successfully deployed you can launch it in the broswer at the link given in the terminal.
 
-The database I used for this project is sqlite3 and the database file can be found in /CMSC_447_Homework_2/src/database/data.db
+The database I used for this project is sqlite3 and the database file can be found in CMSC_447_Homework_2/src/database/data.db
 
 This database is loaded with the default values given in the document.
+
+All the backend work I put in to get the apis to work are housed in CMSC_447_Homework_2/src/pages/api/ where each file in this folder is an endpoint that accomplishes a different task.
 
 If you have manipulated the default values in the database, then you can reset them using the following button on the app once deployed and launched in a browser:
 
