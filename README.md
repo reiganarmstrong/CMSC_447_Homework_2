@@ -32,4 +32,4 @@ The rest of my website consists of three cards, one for creating users, one for 
 
 Each function has an output box next to it that shows the result of the user's request. Here is a preview of the website:
 
-![Screenshot 2023-03-14 at 7 05 13 PM](https://user-images.githubusercontent.com/48657455/225161406-b4c7747c-5e90-45a3-ae15-0948e4118450.jpg)
+![image](https://user-images.githubusercontent.com/48657455/225161533-f096a55c-08a4-4e11-a610-a934928ca4ae.png)
